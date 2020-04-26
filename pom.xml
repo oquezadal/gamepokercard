@@ -22,6 +22,25 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.2</version>
+				<configuration>
+					<archive>
+						<index>true</index>
+						<manifest>
+							<addClasspath>true</addClasspath><!-- adds automatically dependencies -->
+							<mainClass>com.bertonisolutions.games.poker.Match</mainClass>
+						</manifest>
+						<manifestEntries>
+							<Built-By>oquezada</Built-By>
+							<author>${project.author.1}</author>
+							<url>${project.url}</url>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
