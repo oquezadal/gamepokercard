@@ -1,0 +1,16 @@
+/assemble/
+/build/
+**/assemble/
+**/build/
+**/.gitignore/
+**/.project
+**/target/
+**/.settings/
+**/.classpath
+**/.factorypath
+.project
+/target/
+/.settings/
+.classpath
+
+
